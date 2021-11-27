@@ -11,7 +11,7 @@ public class Client {
     double ethBalance = 0.00;
 
     //Client Functions
-    //Input Client ID Function
+    //Input Client ID
     public void inputClientID() {
         System.out.print("Please input your username: ");
         clientID = scan.nextLine();
