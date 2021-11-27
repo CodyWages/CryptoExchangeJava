@@ -16,7 +16,7 @@ public class Exchange {
         boolean optionLoop = true;
         int optionChoice = 0;
 
-        while(optionLoop) {
+        while (optionLoop) {
             System.out.println("\nOPTION MENU:\n");
             System.out.println("1. Check the current prices of available assets");
             System.out.println("2. Check your current asset balances");
