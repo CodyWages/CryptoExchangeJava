@@ -8,14 +8,14 @@ public class Agent extends Client {
     protected double btcUSD = 54990.66;
     protected double ethUSD = 4130.78;
     
-    //USD Asset Price List
+    //Agent Functions
+    //Asset Price List
     protected void assetPrices() {
         System.out.println("\nThe current prices of the available assets are: ");
         System.out.println("BITCOIN = $" + btcUSD);
         System.out.println("ETHEREUM = $" + ethUSD);
     }
   
-    //Agent Functions
     //Buy Bitcoin 
     void buyBTC() {        
         System.out.println("\nYou currently have $" + usdBalance + " to convert.");
