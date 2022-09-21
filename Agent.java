@@ -4,19 +4,19 @@ public class Agent extends Client {
     
     public static Scanner scan = new Scanner(System.in);
 
-    //USD Asset Price
+    // USD Asset Price
     protected double btcUSD = 54990.66;
     protected double ethUSD = 4130.78;
     
-    //Agent Functions
-    //Asset Price List
+    // Agent Functions
+    // Asset Price List
     protected void assetPrices() {
         System.out.println("\nThe current prices of the available assets are: ");
         System.out.println("BITCOIN = $" + btcUSD);
         System.out.println("ETHEREUM = $" + ethUSD);
     }
   
-    //Buy Bitcoin 
+    // Buy Bitcoin 
     void buyBTC() {        
         System.out.println("\nYou currently have $" + usdBalance + " to convert.");
         System.out.println("1 BTC is $" + btcUSD + ".\nHow much BITCOIN would you like to BUY? ");
@@ -33,7 +33,7 @@ public class Agent extends Client {
         System.out.println(btcBalance + " BTC");
     }
     
-    //Sell Bitcoin
+    // Sell Bitcoin
     void sellBTC() {
         System.out.println("\nYou currently have " + btcBalance + " BTC to convert.");
         System.out.println("1 BTC is $" + btcUSD + ".\nHow much BITCOIN would you like to SELL? ");
@@ -50,7 +50,7 @@ public class Agent extends Client {
         System.out.println(btcBalance + " BTC");  
     }
 
-    //Buy Ethereum
+    // Buy Ethereum
     void buyETH() {
         System.out.println("\nYou currently have $" + usdBalance + " to convert.");
         System.out.println("1 ETH is $" + ethUSD + ".\nHow much ETHEREUM would you like to BUY? ");
@@ -67,7 +67,7 @@ public class Agent extends Client {
         System.out.println(ethBalance + " ETH");   
     }
     
-    //Sell Ethereum
+    // Sell Ethereum
     void sellETH() {
         System.out.println("\nYou currently have " + ethBalance + " ETH to convert.");
         System.out.println("1 ETH is $" + ethUSD + ".\nHow much ETHEREUM would you like to SELL? ");
