@@ -8,11 +8,11 @@ public class Exchange {
 
     public static void main(String[] args) {
         
-        //Client ID Input
+        // Client ID Input
         agent.inputClientID();        
         System.out.println("\nHello " + agent.clientID() + ". Welcome to the exchange.");
 
-        //Option Menu Loop
+        // Option Menu Loop
         boolean optionLoop = true;
         int optionChoice = 0;
 
@@ -27,14 +27,14 @@ public class Exchange {
             System.out.println("7. Exit the exchange");
             System.out.print("\nInput the number for the option you would like to choose: ");
             
-            //Check If optionChoice Input is an Integer
+            // Check If optionChoice Input is an Integer
             if (scan.hasNextInt()) {
                 optionChoice = scan.nextInt();
-            }else {
+            } else {
                 scan.next();
             }
             
-            //Switch for Option Choice
+            // Switch for Option Choice
             switch (optionChoice) {
             case 1:
                 agent.assetPrices();
@@ -79,8 +79,8 @@ public class Exchange {
         }
     }
 
-    //Exchange Functions
-    //Print Current Balances
+    // Exchange Functions
+    // Print Current Balances
     public static void userBalance() {
         System.out.println("\n" + agent.clientID() + "'s current balances: ");
         System.out.println("USD = " + agent.usdBalance() + " USD");
@@ -88,7 +88,7 @@ public class Exchange {
         System.out.println("ETH = " + agent.ethBalance() + " ETH");
     }
 
-    //Loop Pause 
+    // Loop Pause 
     public static void waitForEnter() {
         System.out.print("\nPress ENTER to return to the option menu.");
         Scanner scan = new Scanner(System.in);
